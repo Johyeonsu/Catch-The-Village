@@ -89,20 +89,20 @@ public class Product implements Comparable<Product>{
 	
 	public Product makeItem(Product p, int i) {
 		switch(i) {
-		case(0): p = new Product(true, "house1", 1, 0.0, 100, new ImageIcon("\\img\\house1.png"));	break;
-		case(1): p = new Product(true, "house2", 2, 0.0, 180, new ImageIcon("\\img\\house2.png"));	break;
-		case(2): p = new Product(true, "house4", 4, 0.0, 360, new ImageIcon("\\img\\house4.png"));	break;
-		case(3): p = new Product(true, "house8", 8, 0.0, 720, new ImageIcon("\\img\\house8.png"));	break;
-		case(4): p = new Product(true, "flower", 0, 0.01, 45, new ImageIcon("\\img\\flower.png"));	break;
-		case(5): p = new Product(true, "tree", 0, 0.02, 100, new ImageIcon("\\img\\tree.png"));	break;
-		case(6): p = new Product(true, "bench", 0, 0.1, 550, new ImageIcon("\\img\\bench.png"));	break;
-		case(7): p = new Product(true, "fountain", 0, 0.2, 1000, new ImageIcon("\\img\\fountain.png"));	break;
+		case(0): p = new Product(true, "house1", 1, 0.0, 100, new ImageIcon("img/house1.png"));	break;
+		case(1): p = new Product(true, "house2", 2, 0.0, 180, new ImageIcon("img/house2.png"));	break;
+		case(2): p = new Product(true, "house4", 4, 0.0, 360, new ImageIcon("img/house4.png"));	break;
+		case(3): p = new Product(true, "house8", 8, 0.0, 720, new ImageIcon("img/house8.png"));	break;
+		case(4): p = new Product(true, "flower", 0, 0.01, 45, new ImageIcon("img/flower.png"));	break;
+		case(5): p = new Product(true, "tree", 0, 0.02, 100, new ImageIcon("img/tree.png"));	break;
+		case(6): p = new Product(true, "bench", 0, 0.1, 550, new ImageIcon("img/bench.png"));	break;
+		case(7): p = new Product(true, "fountain", 0, 0.2, 1000, new ImageIcon("img/fountain.png"));	break;
 		
 		}
 		return p;
 	}
 	public Product makeHomeless(Product p) {
-		p = new Product(true, "homeless", 0, 0, 0, new ImageIcon("\\img\\homeless.png"));  
+		p = new Product(true, "homeless", 0, 0, 0, new ImageIcon("img/homeless.png"));  
 		p.locationX = randomX();
 		p.locationY = randomXY(p.locationX);
 		return p;
