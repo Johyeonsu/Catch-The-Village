@@ -237,9 +237,9 @@ public class Graphic extends JFrame {
 			villagePlumLabel.setText("" + Village.villagePlum);
 			villagePeopleLabel.setText("" + Village.villagePopulation);
 			if (Village.playType == "sadending") {
-				endingbg = new ImageIcon("\\img\\sadending.png");
+				endingbg = new ImageIcon("img/sadending.png");
 			} else if (Village.playType == "happyending") {
-				endingbg = new ImageIcon("\\img\\happyending.png");
+				endingbg = new ImageIcon("img/happyending.png");
 			}
 			if (endingbg != null) {
 				change("ending");
@@ -252,9 +252,9 @@ public class Graphic extends JFrame {
 			villagePlumLabel.setText("" + Village.villagePlum + "");
 			villagePeopleLabel.setText("" + Village.villagePopulation + "");
 			if (Village.playType == "sadending") {
-				endingbg = new ImageIcon("\\img\\sadending.png");
+				endingbg = new ImageIcon("img/sadending.png");
 			} else if (Village.playType == "happyending") {
-				endingbg = new ImageIcon("\\img\\happyending.png");
+				endingbg = new ImageIcon("img/happyending.png");
 			}
 			if (endingbg != null) {
 				change("ending");
@@ -264,7 +264,7 @@ public class Graphic extends JFrame {
 	}
 
 	class IntroPanel extends JPanel {
-		ImageIcon introbg = new ImageIcon("\\img\\intro.png");
+		ImageIcon introbg = new ImageIcon("img/intro.png");
 
 		public void paintComponent(Graphics g) {
 			g.drawImage(introbg.getImage(), 0, 0, getWidth(), getHeight(), this);
@@ -287,7 +287,7 @@ public class Graphic extends JFrame {
 	}
 
 	class IntroPanel1 extends JPanel {
-		ImageIcon intro1 = new ImageIcon("\\img\\intro1.png");
+		ImageIcon intro1 = new ImageIcon("img/intro1.png");
 
 		public void paintComponent(Graphics g) {
 			g.drawImage(intro1.getImage(), 0, 0, getWidth(), getHeight(), this);
@@ -309,7 +309,7 @@ public class Graphic extends JFrame {
 	}
 
 	class IntroPanel2 extends JPanel {
-		ImageIcon intro2 = new ImageIcon("\\img\\intro2setname.png");
+		ImageIcon intro2 = new ImageIcon("img/intro2setname.png");
 
 		public void paintComponent(Graphics g) {
 			g.drawImage(intro2.getImage(), 0, 0, getWidth(), getHeight(), this);
@@ -343,7 +343,7 @@ public class Graphic extends JFrame {
 	}
 
 	class IntroPanel3 extends JPanel {
-		ImageIcon intro3 = new ImageIcon("\\img\\intro3.png");
+		ImageIcon intro3 = new ImageIcon("img/intro3.png");
 
 		public void paintComponent(Graphics g) {
 			g.drawImage(intro3.getImage(), 0, 0, getWidth(), getHeight(), this);
@@ -366,7 +366,7 @@ public class Graphic extends JFrame {
 
 	class PlayPanel extends JPanel {
 
-		ImageIcon bg = new ImageIcon("\\img\\background.jpg");
+		ImageIcon bg = new ImageIcon("img/background.jpg");
 
 		public void paintComponent(Graphics g) {
 			g.drawImage(bg.getImage(), 0, 0, getWidth(), getHeight(), this);
@@ -382,19 +382,19 @@ public class Graphic extends JFrame {
 
 			villagePeopleLabel = new JLabel("" + Village.villagePopulation);
 			setLabelLSA(villagePeopleLabel, 500, 12, 167, 38);
-			ImageIcon villagePeople = new ImageIcon(\\img\\people.png");
+			ImageIcon villagePeople = new ImageIcon("img/people.png");
 			JLabel villagePeopleimg = new JLabel(villagePeople);
 			setLabelLSA(villagePeopleimg, 450, 10, 167, 38);
 
 			villageHappyLabel = new JLabel("" + Village.villageHappy);
 			setLabelLSA(villageHappyLabel, 675, 12, 167, 38);
-			ImageIcon villageHappy = new ImageIcon("\\img\\happyave.png");
+			ImageIcon villageHappy = new ImageIcon("img/happyave.png");
 			JLabel villageHappyimg = new JLabel(villageHappy);
 			setLabelLSA(villageHappyimg, 625, 10, 167, 38);
 
 			villagePlumLabel = new JLabel("" + Village.villagePlum);
 			setLabelLSA(villagePlumLabel, 850, 12, 167, 38);
-			ImageIcon villagePlum = new ImageIcon("\\img\\plum.png");
+			ImageIcon villagePlum = new ImageIcon("img/plum.png");
 			JLabel villagePlumimg = new JLabel(villagePlum);
 			setLabelLSA(villagePlumimg, 800, 10, 167, 38);
 
@@ -405,14 +405,14 @@ public class Graphic extends JFrame {
 			} else {
 				messageIconButton.addActionListener(new OpenNotice());
 			}
-			ImageIcon messageIcon = new ImageIcon("\\img\\messageicon.png");
+			ImageIcon messageIcon = new ImageIcon("img/messageicon.png");
 			JLabel messageIconLabel = new JLabel(messageIcon);
 			setLabelLSA(messageIconLabel, 839, 390, 60, 54);
 
 			JButton marketIconButton = new JButton("");
 			setButtonLSA(marketIconButton, 907, 390, 60, 54);
 			marketIconButton.addActionListener(new OpenMarket());
-			ImageIcon marketIcon = new ImageIcon("\\img\\marketicon.png");
+			ImageIcon marketIcon = new ImageIcon("img/marketicon.png");
 			JLabel marketIconLabel = new JLabel(marketIcon);
 			setLabelLSA(marketIconLabel, 907, 390, 60, 54);
 
@@ -424,7 +424,7 @@ public class Graphic extends JFrame {
 	}
 
 	class MarketPanel extends JPanel {
-		ImageIcon marketbg = new ImageIcon("\\img\\market.png");
+		ImageIcon marketbg = new ImageIcon("img/market.png");
 
 		public void paintComponent(Graphics g) {
 			g.drawImage(marketbg.getImage(), 0, 0, getWidth(), getHeight(), this);
@@ -477,7 +477,7 @@ public class Graphic extends JFrame {
 	}
 
 	class PurchasePanel extends JPanel {
-		ImageIcon purchbg = new ImageIcon("\\img\\purchase.png");
+		ImageIcon purchbg = new ImageIcon("img/purchase.png");
 
 		public void paintComponent(Graphics g) {
 			g.drawImage(purchbg.getImage(), 0, 0, getWidth(), getHeight(), this);
@@ -510,7 +510,7 @@ public class Graphic extends JFrame {
 	}
 
 	class MarketWarningPanel extends JPanel {
-		ImageIcon marketwarningbg = new ImageIcon("\\img\\marketwarning.png");
+		ImageIcon marketwarningbg = new ImageIcon("img/marketwarning.png");
 
 		public void paintComponent(Graphics g) {
 			g.drawImage(marketwarningbg.getImage(), 0, 0, getWidth(), getHeight(), this);
@@ -540,7 +540,7 @@ public class Graphic extends JFrame {
 	}
 
 	class BuildPanel extends JPanel {
-		ImageIcon buildbg = new ImageIcon("\\img\\build.png");
+		ImageIcon buildbg = new ImageIcon("img/build.png");
 
 		public void paintComponent(Graphics g) {
 			g.drawImage(buildbg.getImage(), 0, 0, getWidth(), getHeight(), this);
@@ -573,7 +573,7 @@ public class Graphic extends JFrame {
 	}
 
 	class ChooseJobPanel extends JPanel {
-		ImageIcon choosejobbg = new ImageIcon("\\img\\choosejob.png");
+		ImageIcon choosejobbg = new ImageIcon("img/choosejob.png");
 
 		public void paintComponent(Graphics g) {
 			g.drawImage(choosejobbg.getImage(), 0, 0, getWidth(), getHeight(), this);
@@ -615,7 +615,7 @@ public class Graphic extends JFrame {
 	}
 
 	class NoticePanel extends JPanel {
-		ImageIcon noticebg = new ImageIcon("\\img\\notice.png");
+		ImageIcon noticebg = new ImageIcon("img/notice.png");
 
 		public void paintComponent(Graphics g) {
 			g.drawImage(noticebg.getImage(), 0, 0, getWidth(), getHeight(), this);
